@@ -283,21 +283,6 @@ class Graph:
         return sum(self.adjacency[i][j] for i, j in self.matching)
 
 
-def xor_array(array1, array2):
-    """ Returns a list of elements, calculated by XOR. """
-    if len(array1) != len(array2):
-        raise ValueError("Arrays must be the same length.")
-
-    xor = []
-    for i in range(len(array1)):
-        row = []
-        for j in range(len(array2)):
-            row.append(array1[i] ^ array2[j])
-        xor.append(row)
-
-    return xor
-
-
 if __name__ == "__main__":
     arrayA = [174, 521, 24, 224, 831, 179, 712, 97]
     arrayB = [281, 33, 122, 415, 611, 235, 737, 81]
