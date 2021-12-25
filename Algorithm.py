@@ -299,40 +299,11 @@ def xor_array(array1, array2):
 
 
 if __name__ == "__main__":
-    sample = [[83, 73, 18],
-              [4, 34, 98],
-              [95, 9, 98]]
-    G = Graph.standard(sample)
-    print(G.hungarian_algorithm())
-
-    sample = [[108, 125, 150],
-              [150, 135, 175],
-              [122, 148, 250]]
-    G = Graph.standard(sample)
-    print(G.hungarian_algorithm())
-
-    sample = [[40, 245, 271, 416],
-              [51, 449, 832, 921],
-              [127, 356, 695, 965],
-              [205, 208, 671, 944]]
-    G = Graph.standard(sample)
-    print(G.hungarian_algorithm())
-
-    sample = [[1, 2, 3, 4, 5],
-              [6, 7, 8, 9, 10],
-              [11, 12, 13, 14, 15],
-              [16, 17, 18, 19, 20],
-              [21, 22, 23, 24, 25]]
-    G = Graph.standard(sample)
-    print(G.hungarian_algorithm())
-
     arrayA = [174, 521, 24, 224, 831, 179, 712, 97]
     arrayB = [281, 33, 122, 415, 611, 235, 737, 81]
     arrayXOR = xor_array(arrayA, arrayB)
     print(arrayXOR)
     print()
     G = Graph.standard(arrayXOR)
-    print(G)
-    print()
     print(G.hungarian_algorithm())
     print(G.weight_sum())
